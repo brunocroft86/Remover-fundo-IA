@@ -74,4 +74,4 @@ Para uso comercial intensivo, considere planos pagos
 
 
 
-Desenvolvido com ❤️ por Bruno Galvão | [Seu Site/Portfólio]
+Desenvolvido com ❤️ por Bruno Galvão | [https://brunocroft86.github.io/Remover-fundo-IA/]
