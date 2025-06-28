@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor para Logo Transparente</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-magic"></i> Criador de Logo Transparente</h1>
+            <p>Remova o fundo de imagens JPG/JPEG usando IA gratuitamente</p>
+        </header>
+
+        <main>
+            <div class="converter-box">
+                <div class="upload-area" id="dropArea">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Arraste e solte sua imagem aqui ou</p>
+                        <input type="file" id="fileInput" accept=".jpg,.jpeg">
+                        <label for="fileInput" class="btn">Selecionar Imagem</label>
+                    </div>
+                    <div class="preview-area" id="previewArea">
+                        <div class="image-container">
+                            <h3>Original</h3>
+                            <img id="originalImage" src="" alt="Imagem Original">
+                        </div>
+                        <div class="image-container">
+                            <h3>Resultado</h3>
+                            <div id="resultContainer">
+                                <img id="resultImage" src="" alt="Logo com Fundo Transparente">
+                                <div class="placeholder" id="placeholder">
+                                    <i class="fas fa-image"></i>
+                                    <p>Seu logo aparecerá aqui</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="options">
+                    <div class="option">
+                        <label for="sensitivity">Sensibilidade:</label>
+                        <input type="range" id="sensitivity" min="1" max="100" value="50">
+                        <span id="sensitivityValue">50%</span>
+                    </div>
+                    <button id="convertBtn" class="btn convert-btn" disabled>
+                        <i class="fas fa-magic"></i> Remover Fundo
+                    </button>
+                </div>
+            </div>
+
+            <div class="download-section" id="downloadSection" style="display: none;">
+                <a id="downloadBtn" class="btn download-btn">
+                    <i class="fas fa-download"></i> Baixar Logo
+                </a>
+                <div class="quality-options">
+                    <label for="quality">Qualidade:</label>
+                    <select id="quality">
+                        <option value="1">Alta (PNG)</option>
+                        <option value="0.9">Boa</option>
+                        <option value="0.7">Média</option>
+                    </select>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Bruno Galvão=> Logo Transparente | Usando API de IA gratuita</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
